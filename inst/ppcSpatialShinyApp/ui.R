@@ -22,7 +22,7 @@ shinyUI(
         )
       )
       , conditionalPanel(
-        condition = "input.tabs == 'chart'"
+        condition = "input.tabs == 'Plot'"
         ,  h4("Chart by Administrative Unit")
         ,  selectInput(
           inputId = "PlotUnit"
@@ -78,22 +78,7 @@ shinyUI(
           )
         )
       )
-      , conditionalPanel(
-        condition = "input.tabs == 'Geographical View'"
-        ,  h4("Population by")
-        , selectInput(
-          inputId = "AdminUnit"
-          , label   = "Please Select Admin Unit"
-          , choices = c(
-            "Provinces"
-            , "Divisions"
-            , "Districts"
-            , "Tehsils"
-            , "City"
-          )
-          , selected ="Provinces"
-        )
-      )
+
 
 )
 , mainPanel(
@@ -105,7 +90,7 @@ shinyUI(
       , dataTableOutput("myTable")
     )
     , tabPanel(
-      title = "chart"
+      title = "Plot"
       , mainPanel(
         width = 12
         , downloadButton(
@@ -115,7 +100,8 @@ shinyUI(
         , plotOutput("myMap")
       )
     )
-    ,tabPanel("Geographical View", leafletOutput("geoMap"))
+    ,tabPanel("Geographical Districts", leafletOutput("geoDist"))
+    ,tabPanel("Geographical Faisalabad", leafletOutput("geoMap"))
     , id = "tabs"
   )
 )

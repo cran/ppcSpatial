@@ -1,7 +1,7 @@
 Package: ppcSpatial
 Type: Package
 Title: Spatial Analysis of Pakistan Population Census
-Version: 0.1.0
+Version: 0.2.0
 Authors@R: c(
               person(c("Muhammad", "Yaseen"),  email = "myaseen208@gmail.com", role = c("aut", "cre"))
             , person(c("Muhammad", "Arfan", "Dilber"),  email = "pbsfsd041@gmail.com", role = c("aut", "ctb"))
@@ -17,8 +17,8 @@ URL: https://github.com/MYaseen208/ppcSpatial
 LazyData: TRUE
 RoxygenNote: 6.0.1
 NeedsCompilation: no
-Packaged: 2018-02-15 08:20:14 UTC; yaseen
+Packaged: 2018-03-07 15:40:22 UTC; yaseen
 Author: Muhammad Yaseen [aut, cre],
   Muhammad Arfan Dilber [aut, ctb]
 Repository: CRAN
-Date/Publication: 2018-02-16 16:52:31 UTC
+Date/Publication: 2018-03-07 15:54:23 UTC
